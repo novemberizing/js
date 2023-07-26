@@ -1,0 +1,33 @@
+{
+  "name": "@novemberizing/js",
+  "version": "0.0.1",
+  "description": "Novemberizing's common javascript lib.",
+  "main": "./src/index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novemberizing/js.git"
+  },
+  "keywords": [
+    "novemberizing",
+    "node",
+    "javascript",
+    "common",
+    "lib"
+  ],
+  "author": "novemberizing <novemberizing@gmail.com>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/novemberizing/js/issues"
+  },
+  "homepage": "https://github.com/novemberizing/js#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
