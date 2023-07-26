@@ -8,6 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "build": "webpack --config ./webpack/config.js",
     "test": "mocha --recursive"
   },
   "repository": {
@@ -28,6 +29,11 @@
   },
   "homepage": "https://github.com/novemberizing/js#readme",
   "devDependencies": {
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
