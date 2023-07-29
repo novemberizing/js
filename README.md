@@ -8,6 +8,12 @@ NOVEMBERIZING'S COMMON JAVASCRIPT LIB
 
 <!-- TODO: BUILD 방법 및 목적 서술 -->
 
-```
+```sh
 npm run build
+```
+
+### 배포방법
+
+```sh
+npm publish --access public
 ```

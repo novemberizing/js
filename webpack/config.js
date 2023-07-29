@@ -10,6 +10,12 @@ export default {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, '../dist'),
+        library: {
+            type: "module",
+        }
+    },
+    experiments: {
+        outputModule: true
     },
     module: {
         rules: [
