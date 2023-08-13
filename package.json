@@ -1,6 +1,6 @@
 {
   "name": "@novemberizing/js",
-  "version": "0.0.14",
+  "version": "0.0.24",
   "description": "Novemberizing's common javascript lib.",
   "main": "./src/index.js",
   "type": "module",
@@ -34,7 +34,5 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
+  "exports": "./src/index.js"
 }

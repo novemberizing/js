@@ -11,8 +11,9 @@ export default {
         filename: 'main.js',
         path: path.resolve(__dirname, '../dist'),
         library: {
-            type: "module",
-        }
+            type: "module"
+        },
+        clean: true
     },
     experiments: {
         outputModule: true
