@@ -5,4 +5,13 @@ export default class NovemberizingHttp {
 
         return await response.json();
     }
+
+    static async json(url, body) {
+        const response = await fetch(url, {
+            method: 'GET',
+            body: JSON.stringify(body)
+        });
+
+        return await response.json();
+    }
 }
