@@ -1,7 +1,7 @@
 
 export default class NovemberizingHttp {
-    static async get(url) {
-        const response = await fetch(url);
+    static async get(url, options = undefined) {
+        const response = await fetch(url, options);
 
         return await response.json();
     }
