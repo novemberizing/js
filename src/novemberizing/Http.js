@@ -8,7 +8,7 @@ export default class NovemberizingHttp {
 
     static async json(url, body) {
         const response = await fetch(url, {
-            method: 'GET',
+            method: 'POST',
             body: JSON.stringify(body)
         });
 
