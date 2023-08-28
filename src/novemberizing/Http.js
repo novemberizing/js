@@ -6,14 +6,26 @@ export default class NovemberizingHttp {
         return await response.json();
     }
 
-    static async json(url, body) {
-        const response = await fetch(url, {
+    static async post(url, body, options) {
+        const response = await fetch(url, Object.assign({
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
                 "Content-Type": "application/json"
             }
-        });
+        }, options));
+
+        return await response.json();
+    }
+
+    static async json(url, body, options) {
+        const response = await fetch(url, Object.assign({
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }, options));
 
         return await response.json();
     }

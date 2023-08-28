@@ -1,6 +1,6 @@
 {
   "name": "@novemberizing/js",
-  "version": "0.0.37",
+  "version": "0.0.38",
   "description": "Novemberizing's common javascript lib.",
   "main": "./src/index.js",
   "type": "module",
