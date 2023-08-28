@@ -1,8 +1,12 @@
 
 export default class NovemberizingHttp {
     static async get(url, options = undefined) {
-        const response = await fetch(url, options);
-
+        const response = await fetch(url, Object.assign({
+            method: 'GET',
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }, options));
         return await response.json();
     }
 
