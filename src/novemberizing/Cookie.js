@@ -10,4 +10,8 @@ export default class NovemberizingCookie {
     static set(key, value) {
         document.cookie = `${key}=${value}; max-age=${60*60*24*365}; SameSite=lax;`;
     }
+
+    static del(key) {
+        document.cookie = `${key}=; Max-Age=0`;
+    }
 }

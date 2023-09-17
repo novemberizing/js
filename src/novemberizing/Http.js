@@ -7,7 +7,10 @@ export default class NovemberizingHttp {
                 "Content-Type": "application/json"
             }
         }, options));
-        return await response.json();
+        
+        if(response.ok) return await response.json();
+
+        throw new Error();
     }
 
     static async post(url, body, options) {
@@ -19,7 +22,9 @@ export default class NovemberizingHttp {
             }
         }, options));
 
-        return await response.json();
+        if(response.ok) return await response.json();
+
+        throw new Error();
     }
 
     static async json(url, body, options) {
@@ -31,6 +36,8 @@ export default class NovemberizingHttp {
             }
         }, options));
 
-        return await response.json();
+        if(response.ok) return await response.json();
+
+        throw new Error();
     }
 }
